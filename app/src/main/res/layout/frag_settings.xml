@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <RelativeLayout
+        android:id="@+id/privacy_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginLeft="9dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_privacy"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/iv_privacy"
+            android:layout_toRightOf="@id/iv_privacy"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:gravity="center"
+            android:text="Privacy"
+            android:textSize="15sp"
+            android:textColor="#212121"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <RelativeLayout
+        android:id="@+id/change_password_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginLeft="9dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_key_black_24dp"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/iv_change_password"
+            android:layout_toRightOf="@id/iv_change_password"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:gravity="center"
+            android:text="Change password"
+            android:textSize="15sp"
+            android:textColor="#212121"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btn_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_edit_black_24dp"
+            android:tint="@color/colorPrimary"
+            android:padding="6dp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <RelativeLayout
+        android:id="@+id/forgot_password_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginLeft="9dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_forgot_password"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/iv_forgot_password"
+            android:layout_toRightOf="@id/iv_forgot_password"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:gravity="center"
+            android:text="Forgot password?"
+            android:textSize="15sp"
+            android:textColor="#212121"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <Button
+        android:id="@+id/btn_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/red"
+        android:text="Delete Account"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

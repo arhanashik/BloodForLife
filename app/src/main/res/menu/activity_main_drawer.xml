@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_fnf"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="Friends and Family" />
+    </group>
+
+    <item android:title="Donation">
+        <menu>
+            <item
+                android:id="@+id/nav_find_donor"
+                android:icon="@drawable/ic_menu_find_donor"
+                android:title="Find Donor" />
+            <item
+                android:id="@+id/nav_be_donor"
+                android:icon="@drawable/ic_menu_be_donor"
+                android:title="Be A Donor" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_menu_about_us"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_tnc"
+                android:icon="@drawable/ic_menu_tnc"
+                android:title="Terms And Conditions" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+    <item android:title="Option">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

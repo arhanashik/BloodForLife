@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.blackspider.bloodforlife.views.DancingScriptRegularFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_blood_group"
+        android:tint="@color/colorPrimary"/>
+
+    <com.blackspider.bloodforlife.views.DancingScriptRegularFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate ONE BAG blood - save ONE LIFE"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</LinearLayout>
